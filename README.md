@@ -1,7 +1,6 @@
 # Expense Tracker
 
 A responsive Expense Tracker built using React.js that helps users manage their income and expenses efficiently.
-
 ## Features
 
 - Add income and expense transactions
