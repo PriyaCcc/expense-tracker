@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.balance-container {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.income,
+.expense {
+    width: 45%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.income {
+    background-color: #d4edda;
+}
+
+.expense {
+    background-color: #f8d7da;
+}
+
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.transaction-form input,
+.transaction-form select,
+.transaction-form button {
+    padding: 10px;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.history li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.history li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.history button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.income-item {
+    border-left: 5px solid green;
+}
+
+.expense-item {
+    border-left: 5px solid red;
 }
